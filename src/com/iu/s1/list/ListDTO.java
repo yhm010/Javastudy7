@@ -1,7 +1,7 @@
 package com.iu.s1.list;
 
 public class ListDTO {
-	// 모델링
+	// 모델링 데이터를 넣어준다.
 	private String name; // private 외부에서 집어가거나 꺼내가지 못하게! 그래서 set get 필요함
 	public String getName() {
 		return name;
