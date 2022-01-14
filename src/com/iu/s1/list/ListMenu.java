@@ -23,10 +23,11 @@ public class ListMenu {
 			int select = sc.nextInt();
 
 			if (select == 1) { // 위에 변수 선언과 이름 같아야함.
-				go.listDTO(li);
+				go.Everything(go);
 			} else if (select == 2) {
 				System.out.println("2번 선택");
 			} else if (select == 3) {
+				ListDTO listDTO = 
 				li.phoneInput();
 			} else if (select == 4) {
 				System.out.println("4번 선택");
