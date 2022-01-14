@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ListInput {
-	// 3번 누르면 명단 추가 해주는 것
+	// 3번 누르면 명단 추가 해주는 것 / 서비스해주는 것
 
 	private Scanner sc;
 
