@@ -6,7 +6,7 @@ import java.util.List;
 public class Group {
 	// 1번 누르면 전체명단 출력해주는 것
 
-	public void Everything(List<ListDTO> li) { 
+	public void Group(List<ListDTO> li) { 
 		
 		for (int i=0;i<li.size();i++) {
 			ListDTO listDTO = li.get(i); // 변수선언과 초기화

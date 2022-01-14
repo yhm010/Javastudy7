@@ -13,15 +13,15 @@ public class ListInput {
 
 	}
 
-	public ListDTO phoneInput() {
-		ListDTO li = new ListDTO(); // 객체생성
+	public ListDTO addList() {
+		ListDTO listDTO = new ListDTO(); // 객체생성
 		System.out.println("이름");
 		System.out.println("별명");
 		System.out.println("이메일");
 		System.out.println("전화번호");
 		System.out.println("생일");
 
-		return li; // 5시40분 다시 해보기
+		return listDTO; // 5시40분 다시 해보기
 	}
 
 }

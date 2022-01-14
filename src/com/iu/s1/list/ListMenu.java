@@ -1,5 +1,6 @@
 package com.iu.s1.list;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ListMenu {
@@ -10,25 +11,25 @@ public class ListMenu {
 
 		ListInput li = new ListInput(); //객체생성
 		Group go = new Group();
+		ArrayList<ListDTO> ar = new ArrayList<>();
 
 		boolean check = true; // While 쓰려면 미리 해놔야함.
 		while (check) {
 
 			System.out.println("1. 전체명단 출력");
-			System.out.println("2. 이름 입력하면 그 사람의 정보가 출력");
+			System.out.println("2. 정보 검색");
 			System.out.println("3. 주소록 명단 추가");
-			System.out.println("4. 주소록 명단 제거");
+			System.out.println("4. 주소록 명단 삭제");
 			System.out.println("5. 종료");
-
 			int select = sc.nextInt();
 
 			if (select == 1) { // 위에 변수 선언과 이름 같아야함.
-				go.Everything(go);
+				go.Group(ar);
 			} else if (select == 2) {
 				System.out.println("2번 선택");
 			} else if (select == 3) {
-				ListDTO listDTO = 
-				li.phoneInput();
+				ListDTO listDTO = li.addList();
+				ar.add(listDTO);
 			} else if (select == 4) {
 				System.out.println("4번 선택");
 			} else {

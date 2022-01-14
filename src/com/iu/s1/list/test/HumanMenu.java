@@ -25,7 +25,10 @@ public class HumanMenu {
 			if(select==1) {
 				hv.view(ar);
 			}else if(select==2) {
-				System.out.println("22222");
+
+				HumanDTO humanDTO = hs.searchHuman(ar);
+				hv.view(ar);
+				
 			}else if(select==3) {
 				
 				HumanDTO humanDTO = hs.addHuman();

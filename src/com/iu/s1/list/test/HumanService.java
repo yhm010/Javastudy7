@@ -1,5 +1,6 @@
 package com.iu.s1.list.test;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class HumanService {
@@ -11,6 +12,21 @@ public class HumanService {
 	}
 	
 	//이름을 입력받아서 같은 이름이 있는 HumanDTO 찾아서 리턴
+	public HumanDTO searchHuman(List<HumanDTO> ar) {
+		System.out.println("이름을 입력");
+		String name = sc.next();
+		
+		HumanDTO humanDTO = null;
+		
+		for(int i=0; i<ar.size();i++) { 
+			if(name.equals(ar.get(i).getName())) {
+				humanDTO = ar.get(i);
+				break;
+			}
+		}
+		
+		return humanDTO;
+	}
 	
 	public HumanDTO addHuman() {
 		HumanDTO humanDTO = new HumanDTO();
