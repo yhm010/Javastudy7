@@ -26,12 +26,18 @@ public class ListMenu {
 			if (select == 1) { // 위에 변수 선언과 이름 같아야함.
 				go.Group(ar);
 			} else if (select == 2) {
-				System.out.println("2번 선택");
+				ListDTO listDTO = li.searchList(ar);
+				go.Group(ar);
 			} else if (select == 3) {
 				ListDTO listDTO = li.addList();
 				ar.add(listDTO);
 			} else if (select == 4) {
-				System.out.println("4번 선택");
+				boolean flag = li.deletList(ar);
+				if(flag) {
+					System.out.println("성공");
+				}else {
+					System.out.println("실패");
+				}
 			} else {
 				System.out.println("finish!!");
 				break;

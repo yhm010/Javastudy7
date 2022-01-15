@@ -20,14 +20,15 @@ public class HumanMenu {
 			System.out.println("3. 명단 추가");
 			System.out.println("4. 명단 삭제");
 			System.out.println("5. 종    료");
+			
 			int select = sc.nextInt();
 			
 			if(select==1) {
 				hv.view(ar);
 			}else if(select==2) {
-
+				
 				HumanDTO humanDTO = hs.searchHuman(ar);
-				hv.view(ar);
+				hv.view(humanDTO);
 				
 			}else if(select==3) {
 				
@@ -35,7 +36,13 @@ public class HumanMenu {
 				ar.add(humanDTO);
 				
 			}else if(select==4) {
-				System.out.println("44444");
+				boolean flag = hs.deleteHuman(ar);
+				if(flag) {
+					System.out.println("성공");
+				}else {
+					System.out.println("실패");
+				}
+				
 			}else {
 				System.out.println("Finish");
 				break;

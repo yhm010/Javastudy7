@@ -1,5 +1,7 @@
 package com.iu.s1.list;
 
+import java.util.Calendar;
+
 public class ListDTO {
 	// 모델링 데이터를 넣어주는 것
 	 // private 외부에서 집어가거나 꺼내가지 못하게! 그래서 set get 필요함
