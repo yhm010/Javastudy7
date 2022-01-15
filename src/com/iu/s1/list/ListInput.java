@@ -22,8 +22,8 @@ public class ListInput {
 		
 		boolean result = false;
 
-		for (int i = 0; i < ar.size(); i++) {
-			if (name.equals(ar.get(i).getName())) {
+		for(int i=0; i<ar.size();i++) {
+			if(name.equals(ar.get(i).getName())) {
 				ar.remove(i);
 				result = true;
 				break;
@@ -39,9 +39,9 @@ public class ListInput {
 
 		ListDTO listDTO = null;
 
-		for (int i = 0; i < ar.size(); i++) {
-			if (name.equals(ar.get(i).getName())) {
-				listDTO = ar.get(i);
+		for(int i=0; i<ar.size();i++) {
+			if(name.equals(ar.get(i).getName())) {
+				listDTO=ar.get(i);
 				break;
 			}
 		}

@@ -27,7 +27,7 @@ public class ListMenu {
 				go.Group(ar);
 			} else if (select == 2) {
 				ListDTO listDTO = li.searchList(ar);
-				go.Group(ar);
+				go.view(listDTO);
 			} else if (select == 3) {
 				ListDTO listDTO = li.addList();
 				ar.add(listDTO);
